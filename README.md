@@ -1,10 +1,10 @@
-# 🚀 Automated EBS Backup System Using AWS Lambda
+# Automated EBS Backup System Using AWS Lambda
 
 ### (On-Demand Serverless Backup)
 
 ---
 
-## 📖 Introduction
+##  Introduction
 
 Data backup is a critical part of cloud infrastructure to ensure data safety and recovery. This project automates the process of creating Amazon EBS snapshots using AWS Lambda instead of manually performing backups from the console.
 
@@ -12,7 +12,7 @@ It demonstrates how serverless computing can simplify cloud operations with mini
 
 ---
 
-## 🧩 Services Used
+##  Services Used
 
 * AWS Lambda — Executes backup logic
 * Amazon EC2 — Hosts instances
@@ -21,7 +21,7 @@ It demonstrates how serverless computing can simplify cloud operations with mini
 
 ---
 
-## 🏗️ Architecture Overview
+##  Architecture Overview
 
 **Manual Trigger → Lambda → EBS Volume → Snapshot Created**
 
@@ -31,7 +31,7 @@ It demonstrates how serverless computing can simplify cloud operations with mini
 
 ---
 
-## ⚙️ Implementation Steps
+##  Implementation Steps
 
 ### 🔹 Step 1: Create IAM Role
 
@@ -80,7 +80,7 @@ It demonstrates how serverless computing can simplify cloud operations with mini
 
 ---
 
-## 🧠 Lambda Code
+##  Lambda Code
 
 ```python
 import boto3
@@ -138,7 +138,7 @@ def lambda_handler(event, context):
 
 ---
 
-## 🔔 How It Works
+## How It Works
 
 1. User triggers Lambda manually
 2. Lambda fetches EBS volumes
@@ -147,7 +147,7 @@ def lambda_handler(event, context):
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
 ✔ Serverless execution
 ✔ On-demand backup
@@ -157,7 +157,7 @@ def lambda_handler(event, context):
 
 ---
 
-## 📊 Use Cases
+##  Use Cases
 
 * Quick manual backups before deployment
 * Testing backup processes
@@ -165,7 +165,7 @@ def lambda_handler(event, context):
 
 ---
 
-## 🚀 Benefits
+##  Benefits
 
 * Reduces manual console work
 * Faster backup execution
@@ -173,34 +173,26 @@ def lambda_handler(event, context):
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 * Not fully automated (no scheduling)
 * No monitoring or alerts
 
 ---
 
-## 🔮 Future Improvements
-
-* Add EventBridge for scheduling
-* Integrate CloudWatch for monitoring
-* Implement tag-based filtering
-
----
-
-## 📌 Conclusion
+## Conclusion
 
 This project demonstrates how to use AWS Lambda to simplify backup operations. Even though it is manually triggered, it provides a strong foundation for building a fully automated backup system.
 
 ---
 
-## 👩‍💻 Author
+##  Author
 
 **Vaishnavi Jagtap**
 
 ---
 
-## 📜 License
+## License
 
 This project is licensed under the MIT License.
 
